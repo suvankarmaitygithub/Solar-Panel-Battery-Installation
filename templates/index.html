@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prosumer Battery Integration</title>
+</head>
+<body>
+    <h1>Prosumer Battery Integration Decision Tool</h1>
+    <form action="/predict" method="post">
+        <label for="grid_reliability">Grid Reliability (0 to 1):</label>
+        <input type="text" name="grid_reliability" required><br>
+        
+        <label for="avg_power_outage_duration">Average Power Outage Duration (hours/month):</label>
+        <input type="text" name="avg_power_outage_duration" required><br>
+        
+        <label for="peak_power_requirement">Peak Power Requirement (kW):</label>
+        <input type="text" name="peak_power_requirement" required><br>
+        
+        <label for="off_peak_power_requirement">Off-Peak Power Requirement (kW):</label>
+        <input type="text" name="off_peak_power_requirement" required><br>
+        
+        <label for="solar_generation_capacity">Solar Generation Capacity (kW):</label>
+        <input type="text" name="solar_generation_capacity" required><br>
+        
+        <label for="excess_electricity">Excess Electricity (kWh):</label>
+        <input type="text" name="excess_electricity" required><br>
+        
+        <label for="battery_capacity">Battery Capacity (kWh):</label>
+        <input type="text" name="battery_capacity" required><br>
+        
+        <label for="battery_type">Battery Type:</label>
+        <select name="battery_type" required>
+            <option value="Lithium-ion">Lithium-ion</option>
+            <option value="Lead-acid">Lead-acid</option>
+        </select><br>
+        
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
