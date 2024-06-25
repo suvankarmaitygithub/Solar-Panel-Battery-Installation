@@ -33,7 +33,7 @@ def predict():
         features = scaler.transform(features)
         prediction = model.predict(features)
         
-        return render_template('result.html', prediction=prediction[0])
+        return render_template('result.html', prediction='Yes' if prediction[0] == 1 else 'No')
 
 if __name__ == '__main__':
     app.run(debug=True)
