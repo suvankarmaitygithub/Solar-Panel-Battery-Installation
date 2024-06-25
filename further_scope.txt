@@ -1,0 +1,4 @@
+I got two more datasets in kaggle but it will take the long time for data cleaning hence I kept it simple.
+
+Link 1:- https://www.kaggle.com/code/sunzihao/usa-power-outage-analysis
+Link 2:- https://www.kaggle.com/datasets/hemishveeraboina/maryland-power-outage-a-geographic-dataset/
